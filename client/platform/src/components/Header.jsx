@@ -73,6 +73,7 @@ const Header = () => {
             {t("Header_Provider_Phrase")}
           </Button>
         </Link>
+        {loginButton}
         <Navbar.Toggle />
         <LanguageChanger />
       </div>
