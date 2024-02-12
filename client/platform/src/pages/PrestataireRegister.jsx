@@ -205,17 +205,6 @@ function PrestataireRegister() {
         // TODO: Implement form submission logic
     };
 
-    const handleCategoryCheck = (e) => {
-        const { id, checked } = e.target; 
-        let idIri = `api/categories/${id}`;
-        if (checked) {
-            setFormData({ ...formData, categories: [...formData.categories, idIri] }); 
-        } else {
-            setFormData({ ...formData, categories: formData.categories.filter((category) => category !== idIri) });
-        }
-    };
-
-
     const handleTimeRangeChange = (timeRange, day) => {
         setFormData({
             ...formData,
